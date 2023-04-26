@@ -131,6 +131,27 @@
             "tsConfig": "projects/m-ui/tsconfig.spec.json",
             "karmaConfig": "projects/m-ui/karma.conf.js"
           }
+        },
+        "serve-storybook": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "tsConfig": ".storybook/tsconfig.json",
+            "assets": [],
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "outputPath": "../app/src/main/webapp/",
+            "styles": []
+          }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "configDir": ".storybook",
+            "browserTarget": "m-ui:serve-storybook",
+            "compodoc": false,
+            "port": 6006,
+            "styles": []
+          }
         }
       }
     }

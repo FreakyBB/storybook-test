@@ -14,7 +14,29 @@
             "methods": []
         }
     ],
-    "injectables": [],
+    "injectables": [
+        {
+            "name": "MUiService",
+            "id": "injectable-MUiService-8f5ae7aa6a44c9bc597f38562879737be852a7be2a4468d62ca88f7de5fb39bb75ec0706c506c15deca84beb2f365e6d1264731dd108e4e9f06e7057dc380672",
+            "file": "projects/m-ui/src/lib/m-ui.service.ts",
+            "properties": [],
+            "methods": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class MUiService {\n\n  constructor() { }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 6
+            },
+            "type": "injectable"
+        }
+    ],
     "guards": [],
     "interceptors": [],
     "classes": [],
@@ -269,6 +291,92 @@
             "stylesData": ""
         },
         {
+            "name": "MButtonComponent",
+            "id": "component-MButtonComponent-d5f84b61255af08d111847bf88309abe29d13263c9103a4f4acf9e7cd39360c59484a3e16b16d87b87fa847b18ad226f4da3be4d4deeb35db3828fd96ba10b11",
+            "file": "projects/m-ui/src/lib/m-button/m-button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-m-button",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./m-button.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-m-button',\n  templateUrl: './m-button.component.html',\n})\nexport class MButtonComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "templateData": "<pre>\n  app-m-button\n</pre>\n"
+        },
+        {
+            "name": "MUiComponent",
+            "id": "component-MUiComponent-55c2fe7a277ba38f8a7479fbc2f31aa4b3f87d5743303923c1ffffac360abe1611f3925333b93e73bdf7326bfd071d321cf3bdfa0ca1d736dee74b92bf9b65ac",
+            "file": "projects/m-ui/src/lib/m-ui.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lib-m-ui",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<p>\n  m-ui works!\n</p>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'lib-m-ui',\n  template: `\n    <p>\n      m-ui works!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class MUiComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 13
+            },
+            "implements": [
+                "OnInit"
+            ]
+        },
+        {
             "name": "PageComponent",
             "id": "component-PageComponent-7126d8c2607c946741c651482413b43feb72b2d63cac9d3ac173fde206a5e635eb4cdbf7ca7ac9327c7d4d05cf7ef619144c34c11609ad677081d0ee4e855064",
             "file": "src/stories/page.component.ts",
@@ -433,6 +541,94 @@
                     "elements": []
                 }
             ]
+        },
+        {
+            "name": "MButtonModule",
+            "id": "module-MButtonModule-bff49f495e176e24201047f47d898b32335edeb1f17b5c24bf30b3f312f7ac592cf983d00a3e2c2af0c61d4536353955b8e0f8d9cb764cc6e7c21848decbd817",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/m-ui/src/lib/m-button/m-button.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\n\nimport { MButtonComponent } from './m-button.component';\n\n@NgModule({\n  imports: [CommonModule],\n  declarations: [MButtonComponent],\n  exports: [MButtonComponent],\n})\nexport class MButtonModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "MButtonComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "MButtonComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "MUiModule",
+            "id": "module-MUiModule-bd99cec1a88af489cb434d6d4f121af20acfa52f16937cbbde60a38759bfb394a7ba3e79c7536980f9cac2d26a246725fd74962d5f179f82245f3da077a5a7aa",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/m-ui/src/lib/m-ui.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { MUiComponent } from './m-ui.component';\n\n\n\n@NgModule({\n  declarations: [\n    MUiComponent\n  ],\n  imports: [\n  ],\n  exports: [\n    MUiComponent\n  ]\n})\nexport class MUiModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "MUiComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "MUiComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
         }
     ],
     "miscellaneous": {
@@ -442,6 +638,16 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/m-ui/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -518,6 +724,26 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "MButton",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/m-ui/src/lib/m-button/m-button.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/m-ui/src/lib/m-button/m-button.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<ComponentWithCustomControls>",
+                "defaultValue": "{\n  title: 'Mandy/M Button',\n  component: MButtonComponent,\n  decorators: [\n    moduleMetadata({\n      imports: [MButtonModule],\n    }),\n  ],\n  parameters: {\n    docs: { description: { component: `MButton` } },\n  },\n  argTypes: {},\n  args: {},\n}"
+            },
+            {
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -532,6 +758,15 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/m-ui/src/test.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "literal type"
@@ -585,10 +820,32 @@
                 "deprecationMessage": "",
                 "type": "Story<Page>",
                 "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/m-ui/src/lib/m-button/m-button.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ComponentWithCustomControls>",
+                "defaultValue": "(\n  args: ComponentWithCustomControls\n) => ({ props: args })"
             }
         ],
         "functions": [],
-        "typealiases": [],
+        "typealiases": [
+            {
+                "name": "ComponentWithCustomControls",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "MButtonComponent",
+                "file": "projects/m-ui/src/lib/m-button/m-button.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 177
+            }
+        ],
         "enumerations": [],
         "groupedVariables": {
             "src/test.ts": [
@@ -607,6 +864,27 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "projects/m-ui/src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/m-ui/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/m-ui/src/test.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "literal type"
@@ -751,11 +1029,57 @@
                     "type": "Story<Page>",
                     "defaultValue": "(args: Page) => ({\n  props: args,\n})"
                 }
+            ],
+            "projects/m-ui/src/lib/m-button/m-button.component.stories.ts": [
+                {
+                    "name": "MButton",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/m-ui/src/lib/m-button/m-button.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/m-ui/src/lib/m-button/m-button.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<ComponentWithCustomControls>",
+                    "defaultValue": "{\n  title: 'Mandy/M Button',\n  component: MButtonComponent,\n  decorators: [\n    moduleMetadata({\n      imports: [MButtonModule],\n    }),\n  ],\n  parameters: {\n    docs: { description: { component: `MButton` } },\n  },\n  argTypes: {},\n  args: {},\n}"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/m-ui/src/lib/m-button/m-button.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ComponentWithCustomControls>",
+                    "defaultValue": "(\n  args: ComponentWithCustomControls\n) => ({ props: args })"
+                }
             ]
         },
         "groupedFunctions": {},
         "groupedEnumerations": {},
-        "groupedTypeAliases": {}
+        "groupedTypeAliases": {
+            "projects/m-ui/src/lib/m-button/m-button.component.stories.ts": [
+                {
+                    "name": "ComponentWithCustomControls",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "MButtonComponent",
+                    "file": "projects/m-ui/src/lib/m-button/m-button.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 177
+                }
+            ]
+        }
     },
     "routes": {
         "name": "<root>",
@@ -772,9 +1096,86 @@
         ]
     },
     "coverage": {
-        "count": 4,
+        "count": 2,
         "status": "low",
         "files": [
+            {
+                "filePath": "projects/m-ui/src/lib/m-button/m-button.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "MButton",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/m-ui/src/lib/m-button/m-button.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/m-ui/src/lib/m-button/m-button.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/m-ui/src/lib/m-button/m-button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MButtonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/m-ui/src/lib/m-ui.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MUiComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/m-ui/src/lib/m-ui.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "MUiService",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/m-ui/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/m-ui/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
             {
                 "filePath": "src/app/app.component.ts",
                 "type": "component",
